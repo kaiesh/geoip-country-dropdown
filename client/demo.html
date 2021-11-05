@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GeoIP Country Dropdown demo</title>
+</head>
+<body>
+  <h1>GeoIP Country Dropdown Demo</h1>
+  See the <a href="https://github.com/kaiesh/geoip-country-dropdown">Git repo</a><br/><br/><br/>
+  <select id="country"></select>
+  <button id="submit">What country?</button>
+
+  <script>
+  document.getElementById("submit").addEventListener("click", function(){
+    alert("You selected ["+document.getElementById("country").value+"]");
+  });
+  </script>
+  <script src="js/geoip.js"></script>
+</body>
+</html>
